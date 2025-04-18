@@ -1,22 +1,8 @@
 // ATmega328P_Datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
 // Arduino-Nano-Pinout : https://www.electronicshub.org/wp-content/uploads/2021/01/Arduino-Nano-Pinout.jpg
 
+#include "defines.h"
 
-#define Btn1_ispressed (!((PIND>>4)%2))
-#define Btn2_ispressed (!((PINB>>4)%2))
-#define Btn3_ispressed (!((PINB>>2)%2))
-#define Btn4_ispressed (!((PIND>>2)%2))
-#define Btn5_ispressed (!((PINB>>1)%2))
-#define Btn6_ispressed (!((PINB)%2))
-
-#define Saw_notSin     ((BTNS)%2)
-#define Scale_notFree  ((BTNS>>1)%2)
-#define LFO_toAmp      ((BTNS>>2)%2)
-#define LFO_toFreq     ((BTNS>>3)%2)
-#define LFO_toPan      ((BTNS>>4)%2)
-#define LFO_typeSin    ((BTNS>>5)%2)
-#define LFO_typeSaw    ((BTNS>>6)%2)
-#define LFO_typeSqare  ((BTNS>>7)%2)
 
 // 256 values of sin between [0:2PI] 
 const uint8_t sin_value[] = {128, 131, 134, 137, 140, 143, 146, 149, 152, 156, 159, 162, 165, 168, 171, 174, 176, 179, 182, 185, 188, 191, 193,
