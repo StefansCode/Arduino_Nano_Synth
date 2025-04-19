@@ -4,7 +4,8 @@
 #include <stdint.h>
 
 extern float    help;                        // a help variable
-extern uint8_t  Settings;                    // used as a bitarray to holds some values
+extern volatile uint8_t     button_interupt_flag;
+extern uint8_t  Settings;                    // used as a bitarray to hold the current settings
 extern uint8_t  counter;                     // counter for Timer2/the soundwave
 extern uint16_t amp;                         // A0 for amplitued/volume
 extern uint16_t ampR;                        // right speaker

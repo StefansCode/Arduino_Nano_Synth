@@ -18,6 +18,9 @@ void setup(){
 
 void loop() {
 
+  // read the buttons and update the settings
+  read_buttons();
+
   // update attack and release
   update_AR();
 
@@ -27,7 +30,7 @@ void loop() {
   // update OCR1A (dependencies: LFO)
   update_frequency();
 
-  // update amp (dependencies: LFO)
+  // update amp (dependencies: LFO, AR)
   update_amplitude();
 
   // update ampR and ampL (dependencies: LFO, amp)

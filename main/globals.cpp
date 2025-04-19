@@ -2,7 +2,8 @@
 #include "globals.h"
 
 extern float    help = 0;                        // a help variable
-extern uint8_t  Settings = 35;    //35==B00100011    // used as a bitarray to holds butten values
+extern volatile uint8_t     button_interupt_flag=0;
+extern uint8_t  Settings = 35;  //35==B00100011  // used as a bitarray to holds butten values
 extern uint8_t  counter = 0;                     // counter for Timer2/the soundwave
 extern uint16_t amp = 0;                         // A0 for amplitued/volume
 extern uint16_t ampR = 0;                        // right speaker

@@ -80,3 +80,46 @@ void update_pan(){
   }
 }
 
+
+void read_buttons(){
+  
+  if(button_interupt_flag){
+    
+    button_interupt_flag = 0;
+    
+    if(LFO_DEST_ispressed){
+      //update LFO destination
+      if(LFO_toAmp){
+        Settings ^= 3 << 2;
+      }
+      else if(LFO_toFreq){
+        Settings ^= 3 << 3;
+      }
+      else if(LFO_toPan ){
+        Settings ^= 1 << 4;
+      }
+      else{
+        Settings ^= 1 << 2;
+      }
+    }
+    if(LFO_TYPE_ispressed){
+      //update LFO waveForm
+      if(LFO_typeSin){
+        Settings ^= 3 << 5;
+      }
+      else if(LFO_typeSaw){
+        Settings ^= 3 << 6;
+      }
+      else if(LFO_typeSqare){
+        Settings ^= 1 << 7;
+        Settings ^= 1 << 5;
+      }
+    }
+    if(CHANGE_WAVE_ispressed){
+      Settings ^= 1 ;
+    }
+    if(FIX_C_SCALE_ispressed){
+      Settings ^= 1 << 1;
+    }
+  }
+}
