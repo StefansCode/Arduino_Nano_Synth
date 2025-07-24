@@ -18,6 +18,8 @@ void setup(){
 
 void loop() {
 
+  //midi_loop();
+
   // read the buttons and update the settings
   read_buttons();
 
