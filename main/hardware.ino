@@ -5,6 +5,9 @@
 void setup_digital_pins(){
 //config. digital Pins as In-/Output
   
+  pinMode(SWICH_PIN, INPUT_PULLUP);
+
+  // Button inputs
   pinMode(4, INPUT_PULLUP);
   pinMode(5, INPUT_PULLUP);
   pinMode(6, INPUT_PULLUP);

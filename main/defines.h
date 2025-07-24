@@ -13,6 +13,9 @@
 #define LFO_FREQ_POTI   A1
 #define LFO_DEPTH_POTI  A0
 
+// define the swich Button
+#define SWICH_PIN 10
+
 // Acsess the digital pins directly.
 // These should not be changend, otherwise the 
 // IRS-functions must be changed.
