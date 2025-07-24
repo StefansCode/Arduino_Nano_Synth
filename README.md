@@ -52,3 +52,6 @@ refine the circuit and add more explanations to this README.
 ![](SynthArdPrototype.jpg)
 
 ![](SynthArdSchematics.jpg)
+
+Midi dose not work and may destroy the arduino.
+I may fix it in the future.
