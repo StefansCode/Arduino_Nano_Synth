@@ -16,22 +16,22 @@ It features
     - with variable frequency and depth.
 
 <p>
-The synthesizer has 7 variable resistors set up as voltage dividers connected to the analog input pins A0-A7 (except for A5). They are used as follows.
+The synthesizer has 7 variable resistors set up as voltage dividers connected to the analog input pins A0-A6. They are used as follows.
 
-- A0 controls the volume.
-- A1 controls the release value of the AR envelope.
-- A2 controls the LFO frequency.
-- A3 controls the LFO depth.
+- A6 controls the volume.
+- A5 controls the pitch/frequency.
 - A4 controls the pan.
-- A6 controls the attack value of the AR envelope.
-- A7 controls the pitch/frequency.
+- A3 controls the attack value of the AR envelope.
+- A2 controls the release value of the AR envelope.
+- A1 controls the LFO frequency.
+- A0 controls the LFO depth.
 
 There are also 6 buttons connected to digital pins D2, D3, D4, D8, D9, D10 and D12. They are used as follows.
 
 - When D4 is pressed, the sound is generated.
 - D8 switches the LFO waveform.
 - D9 changes the LFO destination.
-- D10 fixes the frequency of the sound wave to the C-sale .
+- D10 fixes the frequency of the sound wave to the C-sale.
 - D2 switches the waveform between a sine and sawtooth.
 - D12 is currently unused.
 
