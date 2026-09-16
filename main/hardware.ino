@@ -79,7 +79,7 @@ ISR(TIMER2_OVF_vect){
   if(PLAY_ispressed && !((Env_counter0+attack)>>31)){
     Env_counter0 += attack;
   }
-  else if(!(PLAY_ispressed) && !((Env_counter0-release)>>31)){
+  else if(!(PLAY_ispressed) && !((Env_counter0-release)>>31) && (release > 1000)){
     Env_counter0 -= release;
   }
 }
